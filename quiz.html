@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online quiz</title>
+	<style type="text/css">
+		span
+		{
+			color: blue
+		}
+		section{
+
+		}
+	</style>
+</head>
+<body>
+	 <header>
+	 	<h1 style="text-align: center;">online quiz for students</h1>
+	 </header>
+	 <main>
+         
+	 	<section>
+	 		<h3>each of the question contain 3 three marks</h3>
+	 		<form name="myform" method="POST" action="">
+	 		<b>Q.1 <span>IP</span> stands for</b><br>
+	 		
+	 		<input type="radio" name="q1" value="a">
+	 		<label>internet protocol</label><br>
+	 		<input type="radio" name="q1" value="b">
+	 		<label>internet prototype</label>
+
+	 		<br><br>
+	 		<b>Q.2 <span>HTML</span> stands for</b><br>
+	 		<input type="radio" name="q2" value="a">
+	 		<label>hyper text markup language</label><br>
+	 		<input type="radio" name="q2" value="b">
+	 		<label>hyper text marking language</label>
+	 		<br><br>
+	 		<b>Q.3 <span>CSS</span> stands for</b><br>
+	 		<input type="radio" name="q3" value="b">
+	 		<label>cascoding style sheet</label><br>
+	 		<input type="radio" name="q3" value="a">
+	 		<label>cascadding style sheet</label>
+	 		<br>
+	 		<input type="submit" name="" onclick="check()">
+	 	    </form>
+	 	    <br>
+	 	   
+	 	    <p id="demo"></p>
+
+	 	</section>
+	 	
+	 
+	 	
+	 </main>
+	 <footer><h2></h2></footer>
+	 <script type="text/javascript">
+	 	function check()
+	 	{
+	 		var q1=document.myform.q1.value;
+	 		var q2=document.myform.q2.value;
+	 		var q3=document.myform.q3.value;
+	 		var count =0;
+	 		if (q1=="a") {
+	 			 count=count+3;
+	 		}
+	 		if (q2=="a") {
+	 			 count=count+3;
+	 		} 
+	 		if (q3=="a") {
+	 			 count=count+3;
+	 		}
+	 		var per = count/9*100;
+
+	 	alert("you got "+count+" marks"+per+"%");
+	 	 
+
+
+	 	}
+         
+
+	 </script>
+</body>
+</html>
